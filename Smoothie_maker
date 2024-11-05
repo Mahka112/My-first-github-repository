@@ -75,7 +75,7 @@ def premade_smoothies():
         "Queen banana": ["Banana", "Date", "Pecan"],
         "Tropicana": ["Pineapple", "Mango", "Melon"],
         "Honey milk": ["Strawberries", "Berries", "Honey"],
-        "Green master": ["Banana", "Pineapple", "passion fruit", "Spirulina"],
+        "Green master": ["Banana", "Pineapple", "passionfruit", "Spirulina"],
         "Super shake": ["Acai", "Strawberries", "Date", "Chia", "Protein Powder"]
     }
     dataframe = pd.DataFrame.from_dict(smoothie_menu, orient='index')
