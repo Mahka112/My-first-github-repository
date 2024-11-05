@@ -36,14 +36,14 @@ def smoothie_maker():
                 print(f"{fruit} is not available. Please choose from the available fruits.")
                 continue
 
-        base = input("Please choose the base: ").capitalise
+        base = input("Please choose the base: ").capitalise()
         if base not in smoothie_ingredients['base']:
             print(f"{base} is not available. Please choose from the available bases.")
             continue
 
         special_addition = []
         for i in range(2):
-            addition = input(f"please choose special addition {i+1}: ").capitalise
+            addition = input(f"please choose special addition {i+1}: ").capitalise()
             if addition in smoothie_ingredients['Special Additions']:
                 special_addition.append(addition)
             else:
