@@ -36,14 +36,14 @@ def smoothie_maker():
                 print(f"{fruit} is not available. Please choose from the available fruits.")
                 continue
 
-        base = input("Please choose the base: ").capitalise()
+        base = input("Please choose the base: ").capitalize()
         if base not in smoothie_ingredients['base']:
             print(f"{base} is not available. Please choose from the available bases.")
             continue
 
         special_addition = []
         for i in range(2):
-            addition = input(f"please choose special addition {i+1}: ").capitalise()
+            addition = input(f"please choose special addition {i+1}: ").capitalize()
             if addition in smoothie_ingredients['Special Additions']:
                 special_addition.append(addition)
             else:
@@ -94,7 +94,7 @@ def premade_smoothies():
     else:
         print("Please Write the full name from the menu")
 
-openai.api_key = ""
+openai.api_key = "iDk96BMOBoLjPxvhn0k_x24KPMuk2JWht0x5c9dHXyT3BlbkFJSpXeeWgBvL4BepsJg4N6HQIY37hnxG3eXOD5fPwG4A"
 
 def check_smoothie_with_ai(smoothie):
     response = openai.Completion.create(
@@ -116,7 +116,8 @@ def main_menu():
         print("welcome to the smoothie maker")
         print("1. order premade smoothie")
         print("2. build your own smoothie")
-        print("3. exit")
+        print("3. view available ingridents")
+        print("4. exit)
         choice = input("please choose an option: ")
         if choice == "1":
             premade_smoothies()
@@ -124,9 +125,13 @@ def main_menu():
         elif choice == "2":
             final_smoothie = smoothie_maker()
             print("Your smoothie is:", final_smoothie)
+            check_smoothie_with_ai(final_smoothie)
             break
         elif choice == "3":
-            print("thank you for using the smoothie maker")
+            available_ingredients():
+            break
+        elif choice == "4":
+            print(""thank you for using the smoothie maker")
             break
         else:
             print("Invalid choice, please choose again.")
