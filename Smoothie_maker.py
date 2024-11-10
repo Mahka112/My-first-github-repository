@@ -94,7 +94,7 @@ def premade_smoothies():
     else:
         print("Please Write the full name from the menu")
 
-openai.api_key = "iDk96BMOBoLjPxvhn0k_x24KPMuk2JWht0x5c9dHXyT3BlbkFJSpXeeWgBvL4BepsJg4N6HQIY37hnxG3eXOD5fPwG4A"
+openai.api_key = ""
 
 def check_smoothie_with_ai(smoothie):
     response = openai.Completion.create(
