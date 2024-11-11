@@ -21,8 +21,17 @@ li{
     list-style-position: inside;
 
 }
-h1, p, ul, li{
+ h1,p,h2,a,  ul, li{
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
+}
+a {
+    color: rgba(254, 254, 254, 0.858);
+    text-decoration:none;
+    font-weight: bold;
+}
+a:hover {
+    color: #28ef05;
+    text-decoration: underline; 
 }
