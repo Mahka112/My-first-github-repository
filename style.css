@@ -1,0 +1,28 @@
+body{
+
+    text-align: center;
+    background-image: url(smooothie.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul{
+    text-align: center;
+    list-style-position: inside;
+    font-family: 'Courier New', Courier, monospace;
+}
+li{
+    list-style-position: inside;
+
+}
+h1, p, ul, li{
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);;
+
+}
